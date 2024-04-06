@@ -10,27 +10,27 @@ const LandingPage = () => {
     {
       id: 1,
       img: "./icons-1.png",
-      size: "w-32",
+      size: "sm:w-32 w-20",
       title: "Expert Instructors",
       desc: " Learn from experienced instructors with real world knowledge.",
     },
     {
       id: 2,
       img: "./icons-2.png",
-      size: "w-24",
+      size: "sm:w-24",
       title: "Web Development",
       desc: "Learn at your own pace and your own comfort",
     },
     {
       id: 3,
       img: "./icons-3.png",
-      size: "w-20",
+      size: "sm:w-20",
       title: "Web Development",
       desc: "Gain practical skills through live project",
     },
   ];
   return (
-    <div className="font-montserrat max-h-max">
+    <div className="font-montserrat max-h-max overflow-x-hidden">
       <Navbar />
       <div className="relative bg-primary">
         <img className="mt-6 w-full" src="./NDP.png" alt="Hero screen" />
@@ -93,9 +93,13 @@ const LandingPage = () => {
         </Marquee>
       </div>
       <div className="flex flex-col max-h-max py-32  bg-primary items-center justify-center ">
-        <div className="lg:flex gap-28">
-          <img className="lg:h-4/5" src="./team.png" alt="Hero screen" />
-          <div>
+        <div className="grid sm:grid-cols-2 gap-28">
+          <img
+            className="w-80 mx-auto sm:w-full sm:ml-10"
+            src="./team.png"
+            alt="Hero screen"
+          />
+          <div className="">
             <div className="flex justify-center items-center mt-14 md:mt-0">
               <h1 className="text-white text-center text-4xl font-semibold tracking-wide  ">
                 Why Choose Us ?
@@ -109,14 +113,14 @@ const LandingPage = () => {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="flex gap-6 mt-16 items-center w-96 mx-auto"
+                className="flex sm:gap-6 gap-3 mt-16 items-center w-96 sm:mx-auto px-6 sm:px-0"
               >
                 <img className={card.size} src={card.img} alt="" />
                 <div className="">
                   <h1 className="text-xl font-semibold text-secondary">
                     {card.title}
                   </h1>
-                  <p className="text-gray-300 font-light tracking-wide text-sm">
+                  <p className="text-gray-300 font-light tracking-wide sm:text-sm text-xs">
                     {card.desc}
                   </p>
                 </div>
