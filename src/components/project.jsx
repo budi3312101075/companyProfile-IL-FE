@@ -6,7 +6,7 @@ const Project = () => {
       <img src="./project.png" alt="project" />
       <div className="flex gap-2">
         <div className="flex items-center text-lg  rounded-r-xl font-semibold w-32 h-20 mt-6  bg-gradient-to-r from-blue-500 to-purple-500 ">
-          <span class="text-center w-full text-white">Name Team</span>
+          <span className="text-center w-full text-white">Name Team</span>
         </div>
         <div className="w-[2px] h-24 my-4 bg-purple-500  " />
         <div className="mt-3">

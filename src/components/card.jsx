@@ -11,7 +11,7 @@ const Card = () => {
         </p>
       </div>
       <div className="mb-5 ml-32 text-sm flex items-center bg-transparent rounded-lg font-semibold w-32 h-8  border border-blue-500 hover:bg-gradient-to-r from-blue-500 to-purple-500 ">
-        <span class="text-center bg-gradient-to-r  w-full from-cyan-400 to-purple-500 bg-clip-text text-transparent hover:text-white">
+        <span className="text-center bg-gradient-to-r  w-full from-cyan-400 to-purple-500 bg-clip-text text-transparent hover:text-white">
           Read More
         </span>
       </div>
